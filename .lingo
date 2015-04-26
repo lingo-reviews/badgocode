@@ -1,0 +1,12 @@
+[[checker]]
+	url="github.com/lingo-reviews/checkers/space_after_forward_slash"
+
+[[checker]]
+	url="github.com/lingo-reviews/checkers/unused_function_args"
+
+[[checker]]
+	url="github.com/lingo-reviews/checkers/license"
+	[checker.options]
+		license_header="""
+// AGPL
+"""
