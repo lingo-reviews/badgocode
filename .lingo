@@ -1,12 +1,23 @@
-[[checker]]
-	url="github.com/lingo-reviews/checkers/space_after_forward_slash"
+# Common tenets for Go
 
-[[checker]]
-	url="github.com/lingo-reviews/checkers/unused_function_args"
+cascade = false
+include = "*"
+template = ""
 
-[[checker]]
-	url="github.com/lingo-reviews/checkers/license"
-	[checker.options]
-		license_header="""
-// AGPL
-"""
+[[tenet_group]]
+  name = "default"
+
+  [[tenet_group.tenet]]
+    name = "lingoreviews/unused_arg"
+    driver = "docker"
+    tag = ""
+    registry = ""
+    [tenet_group.tenet.options]
+
+  [[tenet_group.tenet]]
+    name = "lingoreviews/slasher"
+    driver = "docker"
+    tag = ""
+    registry = ""
+    [tenet_group.tenet.options]
+
